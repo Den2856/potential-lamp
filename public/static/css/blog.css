@@ -1,0 +1,87 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  top: 4px;
+  font-size: 36px;
+}
+
+/* Вырезы */
+.cutout {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background: transparent;
+  z-index: 4;
+  position: relative;
+  top: 13px;
+}
+
+#cutout-1{
+  width: 350px;
+}
+
+#cutout-2{
+  width: 200px;
+}
+
+#cutout-4{
+  width: 500px;
+}
+
+.words{
+  position: relative;
+  top: 4px;
+  width: fit-content;
+  height: 100%;
+  font-size: 47px;
+  background-color: black;
+  padding: 20px;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
